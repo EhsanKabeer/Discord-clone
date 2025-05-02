@@ -1,0 +1,97 @@
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.empty-messages {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+}
+
+.date-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.date-divider::before,
+.date-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
+
+.date-divider span {
+  padding: 0 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.message {
+  display: flex;
+  gap: 12px;
+  padding: 4px 20px;
+  transition: background 0.2s ease;
+}
+
+.message:hover {
+  background: var(--bg-hover);
+}
+
+.message.with-avatar {
+  margin-top: 16px;
+}
+
+.message-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--bg-primary);
+}
+
+.message-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.message-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.message-author {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.message-time {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.edited-badge {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.message-text {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+

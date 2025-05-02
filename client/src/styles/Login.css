@@ -1,0 +1,128 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg-primary);
+  padding: 20px;
+}
+
+.auth-card {
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-icon {
+  font-size: 48px;
+  color: var(--accent-primary);
+  margin-bottom: 16px;
+}
+
+.auth-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.auth-header p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input-icon {
+  font-size: 16px;
+  color: var(--accent-primary);
+}
+
+.form-group input {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--accent-primary);
+}
+
+.auth-button {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px;
+  border-radius: 8px;
+  margin-top: 8px;
+  transition: background 0.2s ease;
+}
+
+.auth-button:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.auth-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.error-message {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid var(--error);
+  color: var(--error);
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.auth-footer {
+  margin-top: 24px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.auth-footer a {
+  color: var(--accent-primary);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.auth-footer a:hover {
+  color: var(--accent-hover);
+}
+
